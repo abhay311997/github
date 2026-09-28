@@ -11,8 +11,39 @@ create a repo at github online
 
 PS C:\github> git remote add origin https://github.com/abhay311997/github.git
 	
-	
+3. i) Make any local changes, that will show in 
+PS C:\github> git status   
+On branch main
+Your branch is up to date with 'origin/main'.
 
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git-Learning.txt
+        WindowVsTerminalCmd.txt
+        desktop.ini
+nothing added to commit but untracked files present (use "git add" to track)
+
+ii) add that changed file in staged changes
+PS C:\github> git add .\Git-Learning.txt
+
+iii) PS C:\github> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Git-Learning.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        WindowVsTerminalCmd.txt
+        desktop.ini
+		
+iv) commit the staged file to remote branch
+PS C:\github> git commit -m "study"
+[main a6b78da] study
+ 1 file changed, 20 insertions(+)
+ create mode 100644 Git-Learning.txt
 
 	
 	
