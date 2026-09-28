@@ -88,12 +88,15 @@ Switched to a new branch 'Readme'
 5). Push local commits from Readme directly into the remote main branch without switching branches locally:
 > git push origin Readme:main
 
+6). Push all local branches that exist on your machine to the remote:
+> git push origin --all
+
 
 
 
    
    
-4). useful commands to see git commit tree
+x). useful commands to see git commit tree
 PS C:\github> git log --oneline
 d0d2128 (HEAD -> main, origin/main, origin/HEAD) study2
 a6b78da study
