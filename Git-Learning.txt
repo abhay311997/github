@@ -28,10 +28,16 @@ Untracked files:
         desktop.ini
 nothing added to commit but untracked files present (use "git add" to track)
 
-ii) add that changed file in staged changes
+ii) add/stage that changed file in staged changes
 PS C:\github> git add .\Git-Learning.txt
 
-iii) PS C:\github> git status
+stage all the file 
+PS C:\github> git add . 
+or
+PS C:\github> git add -A
+
+------------------------
+PS C:\github> git status
 On branch main
 Your branch is up to date with 'origin/main'.
 
@@ -43,8 +49,9 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
         WindowVsTerminalCmd.txt
         desktop.ini
+-------------------------
 		
-iv) commit the staged file 
+iii) commit the staged file 
 PS C:\github> git commit -m "study"
 [main a6b78da] study
  1 file changed, 20 insertions(+)
@@ -52,7 +59,7 @@ PS C:\github> git commit -m "study"
  
 (> git commit --amend | it mofdifies the previous commit then have to push that)
 
-v) push the commited changes to remote branch
+v) push the commited changes to remote branch main
 PS C:\github> git push origin main 
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
@@ -62,6 +69,16 @@ Writing objects: 100% (3/3), 515 bytes | 85.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 To https://github.com/abhay311997/github.git
    cbef89e..a6b78da  main -> main
+   
+(push to all branch
+> git push origin --all
+
+push to a branch named TryBranch
+>git push origin TryBranch
+
+push to current branch
+> git push
+)
   
 
 4). Create a new branch and switch 
