@@ -85,7 +85,8 @@ push to current branch
 PS C:\github> git checkout -b "Readme"
 Switched to a new branch 'Readme'
 
-
+5). Push local commits from Readme directly into the remote main branch without switching branches locally:
+> git push origin Readme:main
 
 
 
