@@ -1,0 +1,20 @@
+1. Initialise git repo
+
+PS C:\github> git init 
+	Initialized empty Git repository in C:/github/.git/
+	
+	
+Created a local Repo
+
+2. Add a remote repo to local
+create a repo at github online
+
+PS C:\github> git remote add origin https://github.com/abhay311997/github.git
+	
+	
+
+
+	
+	
+	
+	
