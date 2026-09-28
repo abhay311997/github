@@ -1,3 +1,7 @@
+https://github.com/scaleracademy/git-demo-20230420
+
+
+
 1. Initialise git repo
 
 PS C:\github> git init 
@@ -11,7 +15,8 @@ create a repo at github online
 
 PS C:\github> git remote add origin https://github.com/abhay311997/github.git
 	
-3. i) Make any local changes, that will show in 
+3. Add any change and commit and push to remote 
+i) Make any local changes, that will show in 
 PS C:\github> git status   
 On branch main
 Your branch is up to date with 'origin/main'.
@@ -39,11 +44,66 @@ Untracked files:
         WindowVsTerminalCmd.txt
         desktop.ini
 		
-iv) commit the staged file to remote branch
+iv) commit the staged file 
 PS C:\github> git commit -m "study"
 [main a6b78da] study
  1 file changed, 20 insertions(+)
  create mode 100644 Git-Learning.txt
+ 
+(> git commit --amend | it mofdifies the previous commit then have to push that)
+
+v) push the commited changes to remote branch
+PS C:\github> git push origin main 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 515 bytes | 85.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/abhay311997/github.git
+   cbef89e..a6b78da  main -> main
+  
+
+4). Create a new branch and switch 
+PS C:\github> git checkout -b "Readme"
+Switched to a new branch 'Readme'
+
+
+
+
+
+
+   
+   
+4). useful commands to see git commit tree
+PS C:\github> git log --oneline
+d0d2128 (HEAD -> main, origin/main, origin/HEAD) study2
+a6b78da study
+cbef89e removed some line
+cc7cced aded a data.txt
+f72e166 added World.js
+c28fb15 created a file in git repo
+
+PS C:\github> git log --oneline --graph --decorate
+* d0d2128 (HEAD -> main, origin/main, origin/HEAD) study2
+* a6b78da study
+* cbef89e removed some line
+* cc7cced aded a data.txt
+* f72e166 added World.js
+* c28fb15 created a file in git repo
+
+PS C:\github> git log --oneline --graph --decorate --color 
+* d0d2128 (HEAD -> main, origin/main, origin/HEAD) study2
+* a6b78da study
+* cbef89e removed some line
+* cc7cced aded a data.txt
+* f72e166 added World.js
+* c28fb15 created a file in git repo
+PS C:\github> 
+ 
+ 
+
+
 
 	
 	

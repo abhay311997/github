@@ -1,0 +1,14 @@
+show Hidden
+PS C:\github> ls -Force
+
+
+    Directory: C:\github
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d--h--        26-09-2026  07:13 PM                .git
+-a----        26-09-2026  07:16 PM            100 Git-Learning.txt
+
+
+
